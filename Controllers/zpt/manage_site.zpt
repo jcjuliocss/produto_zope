@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gerencia Site</title>
+</head>
+<body style="text-align: center;">
+
+	<h1>Gerenciar site</h1>
+
+	<a href="manage_add_page" tal:attributes="href string:manage_add_page">Adicionar pagina</a><br>
+	<a href="manage_edit_page" tal:attributes="href string:manage_edit_page">Editar paginas</a><br>
+	<a href="manage_select_del_page" tal:attributes="href string:manage_select_del_page">Deletar paginas</a><br><br>
+	<a href="url" tal:attributes="href string:pagina_artigos?artigo=1">Pagina inicial</a>
+
+</body>
+</html>

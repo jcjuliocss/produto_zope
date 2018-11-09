@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <p tal:content="string: Pagina deletada!"></p>
+    <a href="manage_select_del_page" tal:attributes="action string:manage_select_del_page">Voltar</a><br><br>
+    <a href="manage_site" tal:attributes="href string:manage_site">Gerenciar site</a><br><br>
+    <a href="pagina_artigos?artigo=1" tal:attributes="href string:pagina_artigos?artigo=1">Pagina inicial</a>
+
+</body>
+</html>

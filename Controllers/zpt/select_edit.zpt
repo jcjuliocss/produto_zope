@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form action="chama_pagina" method="post" tal:attributes="href string:chama_pagina">
+
+	    <span>Titulo da pagina: </span>
+	    <input type="text" name="titulo" id="titulo" value="valor" tal:attributes="value options/titulo"><br>
+
+	    <span>Titulo principal: </span>
+	    <input type="text" name="titulopag" id="titulopag" value="valorpag" tal:attributes="value options/titulopag"><br>
+
+	    <span>Texto: </span><br>
+	    <textarea rows="10" cols="40" maxlength="500" name="areatexto" id="areatexto" tal:content="options/p1">  </textarea><br>
+
+	    <span>Autor: </span>
+	    <input type="text" name="autorform" id="autorform" value="a" tal:attributes="value options/autor"><br>
+
+	    <input type="text" name="titulos" id="titulos" value="&" style="" tal:attributes="value options/dbid; style string:display:none;">
+	    <button type="submit">Enviar</button><br><br>
+
+	</form>
+
+	<a href="manage_edit_page" tal:attributes="href string:manage_edit_page">Cancelar</a>
+
+</body>
+</html>

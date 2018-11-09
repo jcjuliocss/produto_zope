@@ -1,0 +1,17 @@
+<html>
+  <head>
+  </head>
+<body>
+
+    <span>Pagina a deletar: </span>
+
+    <ul>
+        <li tal:repeat="item context/menuZ">
+            <a href="del_page?artigo=&dtml-dbid;" tal:attributes="href string:del_page?artigo=${item/dbid}" tal:content="item/titulo"></a>
+        </li>
+    </ul>
+
+    <a href="manage_site" tal:attributes="href string:manage_site">Cancelar</a>
+
+</body>
+</html>

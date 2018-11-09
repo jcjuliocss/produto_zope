@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<span>Pagina a alterar: </span>
+
+    <ul>
+        <li tal:repeat="item container/menuZ">
+            <a href="" tal:attributes="href string:edit_sql?artigo=${item/dbid}" tal:content="item/titulo"></a>
+        </li>
+    </ul>
+
+    <a href="manage_site" tal:attributes="href string:manage_site">Cancelar</a>
+
+</body>
+</html>

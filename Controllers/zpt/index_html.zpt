@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html metal:define-macro="pagina">
+<head>
+        <link rel="stylesheet" type="text/css" href="style_css" tal:attributes="rel string:stylesheet; type string:text/css; href context/style_css/absolute_url">
+        <title metal:define-slot="tituloPrincipal">Inicio</title>
+</head>
+<body>
+
+    <a href="manage_site" style="float: right;" tal:attributes="href string:manage_site">Gerenciar site</a>
+
+    <div metal:define-macro="menu" id="hd">
+        <div id="menu">
+            <ul>
+                <li tal:repeat="item context/menuZ">
+                    <a href="/${context/id}/paginas/pagina_artigos?artigo=${item/dbid}" tal:attributes="href string:pagina_artigos?artigo=${item/dbid}" tal:content="item/titulo"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <h2 metal:define-slot="tituloSite">Principal</h2>
+        <p metal:define-slot="paragrafo">Texto teste</p>
+    </div>
+
+    <div id="rodape">
+        <span metal:define-slot="autorRod">Autor</span>
+    </div>
+</body>
+</html>

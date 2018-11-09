@@ -1,0 +1,1 @@
+select * from tabela where dbid=<dtml-sqlvar artigo type=int>

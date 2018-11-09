@@ -1,0 +1,12 @@
+<html metal:use-macro="container/index_html/macros/pagina">
+<head>
+    <title metal:fill-slot="tituloPrincipal" tal:content="options/tit"></title>
+</head>
+<body>
+
+    <h2 metal:fill-slot="tituloSite" tal:content="options/pag"></h2>
+    <p metal:fill-slot="paragrafo" tal:content="options/par"></p>
+    <span metal:fill-slot="autorRod" tal:content="options/aut"></span>
+    
+</body>
+</html>

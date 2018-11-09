@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adicionar pagina</title>
+</head>
+<body>
+
+	<form action="adiciona_pag" method="get" tal:attributes="action string:adiciona_pag">
+
+		<span>Titulo:</span>
+		<input type="text" name="titulo_geral" id="titulo_geral"><br>
+
+	    <span>Titulo da pagina: </span>
+	    <input type="text" name="titulo_pagina" id="titulo_pagina"><br>
+
+	    <span>Texto: </span><br>
+	    <textarea rows="10" cols="40" maxlength="500" name="area_texto" id="area_texto" placeholder="Digite o texto aqui"></textarea><br>
+
+	    <span>Autor: </span>
+	    <input type="text" name="autor_pagina" id="autor_pagina"><br><br>
+
+	    <button type="submit">Enviar</button><br><br>
+	</form>
+
+	<a href="manage_site" tal:attributes="href string:manage_site">Cancelar</a>
+
+</body>
+</html>
