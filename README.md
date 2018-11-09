@@ -1,5 +1,5 @@
 # projetoOO
-Projeto para a disciplina Orientação a objetos - FEI 2/201
+Projeto para a disciplina Orientacao a Objetos - FEI 2/2018
 
 GRUPO:
     Julio Cesar Schlindwein da Silva    -   22217006-0
